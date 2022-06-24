@@ -1,0 +1,13 @@
+name: RandomTP
+version: '${project.version}'
+main: me.kelopy.randomtp.RandomTP
+authors: [ Kelopy ]
+description: Random Teleport
+commands:
+  randomtp:
+    description: Teleport randomly across the world!
+    usage: <command>
+    permission: randomtp.rtp
+    permission-message: "§cYou don't have permission to execute this command."
+    aliases:
+      - rtp

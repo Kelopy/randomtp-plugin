@@ -28,7 +28,7 @@ public class randomtp implements CommandExecutor {
                     Location randomLocation = RTPFuncs.generateLocation(target);
                     target.teleport(randomLocation);
 
-                    target.sendMessage(ChatColor.RED + player.getDisplayName() + ChatColor.GOLD + " just rtp'd you.");
+                    target.sendMessage(ChatColor.RED + player.getDisplayName() + " just rtp'd you.");
                     target.sendMessage(ChatColor.GRAY + "Teleported you to: " + ChatColor.AQUA + randomLocation.getX() + " " + randomLocation.getY() + " " + randomLocation.getZ());
 
                     player.sendMessage(ChatColor.GRAY + "Player successfully teleported to: " + ChatColor.AQUA + randomLocation.getX() + " " + randomLocation.getY() + " " + randomLocation.getZ());

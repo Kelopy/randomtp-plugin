@@ -10,12 +10,6 @@ import java.util.Random;
 
 public class RTPFuncs {
 
-    static RandomTP plugin;
-
-    public RTPFuncs(RandomTP plugin) {
-        RTPFuncs.plugin = plugin;
-    }
-
     public static HashSet<Material> bad_blocks = new HashSet<>();
 
     static{
@@ -31,10 +25,10 @@ public class RTPFuncs {
         int y = 0;
         int z = 0;
 
-        if(plugin.getConfig().getBoolean("world-border")){
-            x = random.nextInt(plugin.getConfig().getInt("border"));
-            z = random.nextInt(plugin.getConfig().getInt("border"));
-        }else if(!plugin.getConfig().getBoolean("world-border")){
+        if(RandomTP.getInstance().getConfig().getBoolean("world-border")){
+            x = random.nextInt(RandomTP.getInstance().getConfig().getInt("border"));
+            z = random.nextInt(RandomTP.getInstance().getConfig().getInt("border"));
+        }else if(!RandomTP.getInstance().getConfig().getBoolean("world-border")){
             x = random.nextInt(25000);
             z = random.nextInt(25000);
         }
